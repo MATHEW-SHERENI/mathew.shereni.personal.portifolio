@@ -1,1 +1,358 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Top Header Navigation Bar Styles */
+.header-top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--background-color, #25303f);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 997;
+  transition: all 0.3s ease;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 0 0 auto;
+}
+
+.profile-img-small {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--accent-color, #22e7a1);
+  flex-shrink: 0;
+}
+
+.profile-img-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.header-top-nav .logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-top-nav .logo h1 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  color: var(--heading-color, #f9fafb);
+  white-space: nowrap;
+}
+
+/* Navigation Menu - Horizontal */
+.header-top-nav .navmenu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-top-nav .nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-top-nav .nav-list li {
+  margin: 0;
+}
+
+.header-top-nav .nav-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  color: var(--nav-color, #f3f4f6);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.header-top-nav .nav-list a .navicon {
+  font-size: 18px;
+}
+
+.header-top-nav .nav-list a:hover,
+.header-top-nav .nav-list a.active {
+  color: var(--accent-color, #22e7a1);
+  background-color: rgba(34, 231, 161, 0.1);
+}
+
+/* Social Links */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 0 0 auto;
+}
+
+.header-top-nav .social-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.header-top-nav .social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(243, 244, 246, 0.1);
+  color: var(--default-color, #f3f4f6);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.header-top-nav .social-links a:hover {
+  background-color: var(--accent-color, #22e7a1);
+  color: var(--contrast-color, #1f2937);
+  transform: translateY(-2px);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: var(--default-color, #f3f4f6);
+  cursor: pointer;
+  padding: 8px;
+}
+
+/* Main Content - No Sidebar Margin */
+.header-top-nav ~ main.main,
+.header-top-nav ~ main {
+  margin-left: 0 !important;
+  width: 100% !important;
+  padding-top: 80px;
+}
+
+.header-top-nav ~ #footer {
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+  .header-container {
+    padding: 0 20px;
+    height: 70px;
+  }
+
+  .header-top-nav .nav-list {
+    gap: 5px;
+  }
+
+  .header-top-nav .nav-list a {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .header-top-nav .logo h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-top-nav .navmenu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--background-color, #25303f);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .header-top-nav .navmenu.nav-open {
+    max-height: 500px;
+  }
+
+  .header-top-nav .nav-list {
+    flex-direction: column;
+    padding: 20px;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .header-top-nav .nav-list li {
+    width: 100%;
+  }
+
+  .header-top-nav .nav-list a {
+    width: 100%;
+    padding: 15px;
+    justify-content: flex-start;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .header-right .social-links {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-container {
+    padding: 0 15px;
+    height: 65px;
+  }
+
+  .profile-img-small {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-top-nav .logo h1 {
+    font-size: 18px;
+  }
+
+  .header-top-nav ~ main.main,
+  .header-top-nav ~ main {
+    padding-top: 65px;
+  }
+}
+
+/* Restore floating cards positioning since sidebar is removed */
+.hero .hero-image .image-wrapper .floating-card.card-1 {
+  left: -15% !important;
+  top: 20% !important;
+}
+
+.hero .hero-image .image-wrapper .floating-card.card-3 {
+  left: -10% !important;
+  bottom: 15% !important;
+}
+
+@media (max-width: 992px) {
+  .hero .hero-image .image-wrapper .floating-card.card-1 {
+    left: -10% !important;
+  }
+  
+  .hero .hero-image .image-wrapper .floating-card.card-3 {
+    left: -5% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .hero-image .image-wrapper .floating-card.card-1 {
+    left: 0 !important;
+    top: 10% !important;
+  }
+  
+  .hero .hero-image .image-wrapper .floating-card.card-3 {
+    left: 0 !important;
+    bottom: 5% !important;
+  }
+}
+
+/* Ensure hero section has proper top spacing */
+.hero.section {
+  padding-top: 120px;
+}
+
+/* Mobile and tablet - no sidebar margin */
+@media (max-width: 1199px) {
+  main .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Fix profile image container */
+.profile-img img,
+.profile-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Prevent content overflow */
+.section {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.section .container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Ensure main element doesn't allow overflow */
+main {
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Prevent any row from extending beyond boundaries */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.row > [class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+/* Section title alignment */
+.section-title {
+  text-align: center;
+}
+
+.section-title p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Ensure rows and columns fit properly */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row > [class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}

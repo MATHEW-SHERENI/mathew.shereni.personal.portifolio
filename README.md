@@ -1,6 +1,14 @@
-# Portfolio
+# Portfolio - Mathew Shereni
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+
+## Profile Image Setup
+
+**Important:** Add your profile photo to the following location:
+- Path: `public/assets/img/profile/mathew-shereni.webp`
+- The image should be in WebP format for optimal performance
+- Recommended size: Square aspect ratio (1:1), minimum 300x300px
+- All references to the profile image are already configured in the code
 
 ## Development server
 
