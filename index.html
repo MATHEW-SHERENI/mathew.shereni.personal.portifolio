@@ -1,4 +1,69 @@
-  <app-header/>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Mathew Shereni - Software Engineer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+  <meta name="description" content="Mathew Shereni - Software Engineer and Full-Stack Developer specializing in Java, Spring Boot, React, and AI integration. Currently pursuing MSc in Software Engineering at Saint Louis University with a 3.70 GPA.">
+  <meta name="keywords" content="Mathew Shereni, Software Engineer, Full-Stack Developer, Java, Spring Boot, React, AI Integration, Software Development">
+
+  <!-- Favicons -->
+  <link href="public/assets/img/favicon.png" rel="icon">
+  <link href="public/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="public/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="public/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="public/assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+
+  <header id="header" class="header-top-nav">
+    <div class="header-container">
+      <div class="header-left">
+        <div class="profile-img-small">
+          <img src="public/assets/img/profile/MathewProfilePhoto.jpeg" alt="Mathew Shereni" class="img-fluid">
+        </div>
+        <a href="#hero" class="logo">
+          <h1 class="sitename">Mathew Shereni</h1>
+        </a>
+      </div>
+
+      <nav id="navmenu" class="navmenu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><a href="./assets/MATHEW_RESUME.pdf" download="Mathew_Shereni_Resume" class="download-btn">
+  <span style="margin-right: 8px;">⬇️</span> Download Resume
+</a> </a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <div class="social-links">
+          <a href="#" class="twitter" title="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <i class="mobile-menu-toggle d-xl-none bi bi-list" id="mobile-menu-toggle"></i>
+      </div>
+    </div>
+  </header>
 
   <main class="main">
 
@@ -27,7 +92,7 @@
           <div class="col-lg-6 order-1 order-lg-2">
             <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
               <div class="image-wrapper">
-                <img src="assets/img/profile/MathewProfilePhoto.jpeg" alt="Mathew Shereni - Software Engineer" class="img-fluid main-image">
+                <img src="public/assets/img/profile/MathewProfilePhoto.jpeg" alt="Mathew Shereni - Software Engineer" class="img-fluid main-image">
                 <div class="floating-card card-1" data-aos="fade-up" data-aos-delay="600">
                   <i class="bi bi-code-square"></i>
                   <span>Java & Spring Boot</span>
@@ -68,7 +133,7 @@
                 <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
                   <div class="profile-section">
                     <div class="profile-image-container">
-                      <img src="assets/img/profile/MathewProfilePhoto.jpeg" class="img-fluid" alt="Mathew Shereni">
+                      <img src="public/assets/img/profile/MathewProfilePhoto.jpeg" class="img-fluid" alt="Mathew Shereni">
                     </div>
                     <div class="profile-meta">
                       <div class="location">
@@ -427,7 +492,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
-        <a href="./assets/MATHEW_RESUME.pdf" download="Mathew_Shereni_Resume" class="download-btn">
+        <a href="./assets/RESUME.pdf" download="Mathew_Shereni_Resume" class="download-btn">
   <span style="margin-right: 8px;">⬇️</span> Download Resume
 </a>
         <p>Combining academic excellence with professional experience in IT and software development. Currently advancing expertise through graduate studies while applying practical skills in enterprise environments.</p>
@@ -595,10 +660,10 @@
             <div class="col-lg-6 portfolio-item isotope-item filter-web filter-ai">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="Email Assistant Application" loading="lazy">
+                  <img src="public/assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="Email Assistant Application" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox action-btn preview-btn" title="Email Assistant"><i class="bi bi-eye"></i></a>
+                      <a href="public/assets/img/portfolio/portfolio-7.webp" class="glightbox action-btn preview-btn" title="Email Assistant"><i class="bi bi-eye"></i></a>
                       <a href="https://github.com" target="_blank" class="action-btn details-btn" title="View on GitHub"><i class="bi bi-arrow-up-right"></i></a>
                     </div>
                   </div>
@@ -623,17 +688,17 @@
             <div class="col-lg-6 portfolio-item isotope-item filter-web filter-real-time">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="Real-Time Chat Application" loading="lazy">
+                  <img src="public/assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="Real-Time Chat Application" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox action-btn preview-btn" title="Real-Time Chat Application"><i class="bi bi-eye"></i></a>
+                      <a href="public/assets/img/portfolio/portfolio-3.webp" class="glightbox action-btn preview-btn" title="Real-Time Chat Application"><i class="bi bi-eye"></i></a>
                       <a href="https://github.com" target="_blank" class="action-btn details-btn" title="View on GitHub"><i class="bi bi-arrow-up-right"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="portfolio-content">
                   <div class="portfolio-meta">
-                    <span class="portfolio-category">Real-Time Chat Application</span>
+                    <span class="portfolio-category">Real-Time Application</span>
                     <span class="portfolio-year">2024</span>
                   </div>
                   <h3 class="portfolio-title">Real-Time Chat Application</h3>
@@ -648,48 +713,14 @@
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
-            
-            <div class="col-lg-6 portfolio-item isotope-item filter-web filter-real-time">
-              <div class="portfolio-card">
-                <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-3.webp" class="img-fluid" alt="Real-Time Chat Application" loading="lazy">
-                  <div class="portfolio-overlay">
-                    <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox action-btn preview-btn" title="Real-Time Chat Application"><i class="bi bi-eye"></i></a>
-                      <a href="https://github.com" target="_blank" class="action-btn details-btn" title="View on GitHub"><i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="portfolio-category">Internal CRM & Student Tracker</span>
-                    <span class="portfolio-year">2025</span>
-                  </div>
-                  <h3 class="portfolio-title">CRM DashBoard | Full Stack</h3>
-                  <p class="portfolio-description">Built a dual-repo full-stack CRM dashboard MERN STACK to track student engagement and application progress.
-
-Implemented a "Student Directory" with real-time search and custom filtering logic to identify at-risk students.
-
-Developed comprehensive profile views including communication logs (mock emails/SMS), internal notes, and activity timelines.
-
-Integrated Firebase for real-time database management and secure user authentication.</p>
-                  <div class="portfolio-tech">
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Firebase</span>
-                  
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-6 portfolio-item isotope-item filter-web filter-ai">
               <div class="portfolio-card">
                 <div class="portfolio-image">
-                  <img src="assets/img/portfolio/portfolio-12.webp" class="img-fluid" alt="Research Assistant Extension" loading="lazy">
+                  <img src="public/assets/img/portfolio/portfolio-12.webp" class="img-fluid" alt="Research Assistant Extension" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-actions">
-                      <a href="assets/img/portfolio/portfolio-12.webp" class="glightbox action-btn preview-btn" title="Research Assistant"><i class="bi bi-eye"></i></a>
+                      <a href="public/assets/img/portfolio/portfolio-12.webp" class="glightbox action-btn preview-btn" title="Research Assistant"><i class="bi bi-eye"></i></a>
                       <a href="https://github.com" target="_blank" class="action-btn details-btn" title="View on GitHub"><i class="bi bi-arrow-up-right"></i></a>
                     </div>
                   </div>
@@ -708,7 +739,6 @@ Integrated Firebase for real-time database management and secure user authentica
                     <span class="tech-tag">Google Gemini API</span>
                     <span class="tech-tag">AI Integration</span>
                   </div>
-                  
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -868,7 +898,7 @@ Integrated Firebase for real-time database management and secure user authentica
                 <h3>Send us a message</h3>
               </div>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
+              <form action="public/forms/contact.php" method="post" class="php-email-form">
 
                 <div class="row">
                   <div class="col-md-6">
@@ -880,7 +910,7 @@ Integrated Firebase for real-time database management and secure user authentica
                   <div class="col-md-6">
                     <div class="form-group">
                       <label>Email Address</label>
-                      <input type="email" name="email" required="mashereni@gmail.com">
+                      <input type="email" name="email" required="">
                     </div>
                   </div>
                 </div>
@@ -918,6 +948,96 @@ Integrated Firebase for real-time database management and secure user authentica
     </section><!-- /Contact Section -->
 
   </main>
-<app-footer/>
-  
-<router-outlet />
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">Mathew Shereni</h3>
+      <p>Software Engineer & Full-Stack Developer passionate about building innovative solutions and leveraging technology to solve real-world problems.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Mathew Shereni</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by <strong>Mathew Shereni</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="public/assets/vendor/php-email-form/validate.js"></script>
+  <script src="public/assets/vendor/aos/aos.js"></script>
+  <script src="public/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="public/assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="public/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="public/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="public/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="public/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="public/assets/js/main.js"></script>
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+      const navmenu = document.getElementById('navmenu');
+      let isMenuOpen = false;
+
+      if (mobileMenuToggle && navmenu) {
+        mobileMenuToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          isMenuOpen = !isMenuOpen;
+          if (isMenuOpen) {
+            navmenu.classList.add('nav-open');
+            this.classList.remove('bi-list');
+            this.classList.add('bi-x');
+          } else {
+            navmenu.classList.remove('nav-open');
+            this.classList.remove('bi-x');
+            this.classList.add('bi-list');
+          }
+        });
+
+        // Close mobile menu when clicking on nav links
+        document.querySelectorAll('#navmenu a').forEach(link => {
+          link.addEventListener('click', () => {
+            if (window.innerWidth <= 991) {
+              isMenuOpen = false;
+              navmenu.classList.remove('nav-open');
+              mobileMenuToggle.classList.remove('bi-x');
+              mobileMenuToggle.classList.add('bi-list');
+            }
+          });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+          if (isMenuOpen && !navmenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+            isMenuOpen = false;
+            navmenu.classList.remove('nav-open');
+            mobileMenuToggle.classList.remove('bi-x');
+            mobileMenuToggle.classList.add('bi-list');
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
